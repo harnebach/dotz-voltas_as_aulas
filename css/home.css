@@ -1,0 +1,293 @@
+@charset "utf-8";
+
+/*
+	fontes: HurmeRegular - HurmeLight - HurmeBold - HurmeBlack
+*/
+
+@import 'font.css';
+
+/* Reset CSS
+
+ * --------------------------------------- */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+form,fieldset,input,textarea,p,blockquote,th,td {
+    padding: 0;
+    margin: 0;
+}
+body, html {
+	height: 100%;
+  	margin: 0;
+	background: url("../imgs/bg.jpg") no-repeat center center;
+	background-size: auto;
+}
+a{
+	text-decoration:underline;
+	color: #fff;
+}
+table {
+    border-spacing: 0;
+}
+fieldset,img {
+    border: 0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+    font-weight: normal;
+    font-style: normal;
+}
+
+ol,ul {
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+caption,th {
+    text-align: left;
+
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+    font-size: 100%;
+    margin:0;
+    padding:0;
+    color:#f2f2f2;
+}
+q:before,q:after {
+    content:'';
+}
+abbr,acronym { border: 0;
+}
+
+
+.inverter {
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+/* Custom CSS
+ * --------------------------------------- */
+body{
+	font-family: HurmeRegular, Calibri, Arial, sans-serif;
+	color: #fff;
+}
+.section{
+	text-align: center;
+}
+
+
+
+
+
+
+/* Section 1
+ * --------------------------------------- */
+#container { width: 100%; height: 100%; margin: 0;padding: 0; display: block; }
+ 	#section1 #logo { width: 100%; max-width: 768px;  position: absolute; top:40%; left: 50%; transform: translate(-50%, -50%); }
+	#section1 #logo_aviaozinho { width: 100%; max-width: 347px; height: 100%; max-height: 147px; margin: auto auto; transform: translate(-20%, 40%); }
+	#section1 #logo_volta {width 100%; max-width: 574px; height: auto; max-height: 250px; margin:2% auto 2px; background-size: cover;}
+	#section1 #logo_volta img, #logo_aviaozinho img {width: 99%; margin: 0 auto;}
+	#section1 #txt_com_dotz {width: 100%; max-width: 659px; height: auto; max-height: 33px; margin -20% auto 0; position: relative;}
+	#section1 #txt_com_dotz #txt_bloco { width: 100%; min-height: 50px; height: auto; position: relative; }
+	#section1 #txt_com_dotz #txt_bloco img { width: 99%; position: absolute; top:0; left:1%; }
+	#section1 #logo_dotz { width: 100%; max-width: 303px; height: 100%; max-height: 134px; margin: 2% auto; position: relative; } 				
+	#section1 #logo_dotz img { width: 99%; position: absolute; top:0; left:1%;}
+
+
+
+.apagar {
+    position: relative;
+    -webkit-animation: esmaecer 20s 2; /* Safari 4.0 - 8.0 */
+    -webkit-animation-direction: alternate; /* Safari 4.0 - 8.0 */
+    animation: esmaecer 20s 2;
+    animation-direction: alternate;
+	animation-iteration-count:infinite;
+	}
+
+	/* Safari 4.0 - 8.0 */
+	@-webkit-keyframes esmaecer {
+		0%   { opacity: 1; }
+		 100% { opacity: 0.3; }
+	}
+
+	@keyframes esmaecer {
+		0%   { opacity: 1; }
+		 100% { opacity: 0.3; }	 
+	}
+
+/* Overwriting fullPage.js tooltip color
+* --------------------------------------- */
+#pp-nav.custom .pp-tooltip{
+	color: #AAA;
+}
+
+/* ANIMACOES*/
+.pulse1 { animation: fadeOut 0.9s infinite alternate;}
+.pulse2 { animation: fadeOut 1s infinite alternate;}
+
+
+@-webkit-keyframes brilho {
+  20% {
+	 opacity: 1;
+    -webkit-transform: rotate3d(0, 0, 1, 15deg);
+    transform: rotate3d(0, 0, 1, 15deg);
+  }
+
+  40% {
+    -webkit-transform: rotate3d(0, 0, 1, -10deg);
+    transform: rotate3d(0, 0, 1, -10deg);
+  }
+
+  60% {
+    -webkit-transform: rotate3d(0, 0, 1, 5deg);
+    transform: rotate3d(0, 0, 1, 5deg);
+  }
+
+  80% {
+    -webkit-transform: rotate3d(0, 0, 1, -5deg);
+    transform: rotate3d(0, 0, 1, -5deg);
+  }
+
+  to {
+	  opacity: 0.5;
+    -webkit-transform: rotate3d(0, 0, 1, 0deg);
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+}
+
+@keyframes brilho {
+  20% {
+	 opacity: 1;
+    -webkit-transform: rotate3d(0, 0, 1, 15deg);
+    transform: rotate3d(0, 0, 1, 15deg);
+  }
+
+  40% {
+    -webkit-transform: rotate3d(0, 0, 1, -10deg);
+    transform: rotate3d(0, 0, 1, -10deg);
+  }
+
+  60% {
+    -webkit-transform: rotate3d(0, 0, 1, 5deg);
+    transform: rotate3d(0, 0, 1, 5deg);
+  }
+
+  80% {
+    -webkit-transform: rotate3d(0, 0, 1, -5deg);
+    transform: rotate3d(0, 0, 1, -5deg);
+  }
+
+  to {
+	  opacity: 0.5;
+    -webkit-transform: rotate3d(0, 0, 1, 0deg);
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+}
+
+.brilho {
+  animation: brilho 2s infinite alternate;
+}
+
+
+
+.swing {
+	animation: swing 2s 1 alternate;
+}
+
+.tada {
+	animation: tada 5s infinite alternate;
+}
+
+.tada3 {
+	animation: tada 3s infinite alternate;
+}
+
+
+.zoomIn {
+	animation: zoomIn 2s 1 alternate;
+}
+
+.fadeOut {
+	 animation: pulse 1s infinite alternate;
+	
+}
+
+.bounceInUp {
+	animation: bounceInUp 1s 1 alternate;
+}
+
+@-webkit-keyframes swinging{
+    0%{-webkit-transform: rotate(5deg);}
+    50%{-webkit-transform: rotate(-5deg)}
+    100%{-webkit-transform: rotate(5deg);}
+}
+ 
+@keyframes swinging{
+    0%{transform: rotate(5deg);}
+    50%{transform: rotate(-5deg)}
+    100%{transform: rotate(5deg);}
+}
+ 
+.swingimage{
+    -webkit-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    -webkit-animation: swinging 3.5s ease-in-out forwards infinite;
+    animation: swinging 3.5s ease-in-out forwards infinite;
+}
+
+.swingimage2{
+    -webkit-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    -webkit-animation: swinging 2.5s ease-in-out forwards infinite;
+    animation: swinging 2.5s ease-in-out forwards infinite;
+}
+
+@-webkit-keyframes tada2{
+    0%{
+	-webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+	}
+    50%{
+	-webkit-transform: scale3d(0.9, 0.9, 0.9);
+    transform: scale3d(0.9, 0.9, 0.9);
+	}
+    100%{
+	-webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+	}
+}
+ 
+@keyframes tada2{
+   0%{
+	-webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+	}
+    50%{
+	-webkit-transform: scale3d(0.95, 0.95, 0.95);
+    transform: scale3d(0.95, 0.95, 0.95);
+	}
+    100%{
+	-webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+	}
+}
+ 
+.tada2{
+    -webkit-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    -webkit-animation: tada2 0.2s ease-in-out forwards infinite;
+    animation: tada2 0.2s ease-in-out forwards infinite;
+}
+
+.tada3{
+    -webkit-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    -webkit-animation: tada2 1s ease-in-out forwards infinite;
+    animation: tada2 1s ease-in-out forwards infinite;
+}
+
+
+/* AJUSTE TOOLTIP */
+#pp-nav {
+	font-family: HurmeRegular;
+	font-size: 10px;
+}

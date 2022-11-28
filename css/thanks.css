@@ -1,0 +1,148 @@
+@charset "utf-8";
+/* CSS Document */
+
+body, html {
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		height: 100%;
+		font-family: HurmeRegular;
+		color: #fff;
+	}	
+	body {
+		background: #121b14 url("../imgs/thanks/bg.jpg") repeat top center;
+		background-size: cover;
+
+
+	}
+	a, img {
+		text-decoration: none;
+		outline: none;
+	}
+	a {
+		color: #fff;
+		text-decoration: none;
+	}
+	#content {
+		width: 100%;
+		max-width: 1280px;
+		min-width: 320px;
+		margin: 0 auto;
+		min-height: 600px;
+		position: relative;
+		margin-top: 3%;
+		
+	}
+
+	#logo {
+		width: 100%;
+		text-align: center;
+	}
+	#logo img {
+		width: 100%;
+		max-width: 183px;
+		margin:0 auto;
+		display: block;
+	}
+
+
+	h1 {font-size: 30px; font-family: HurmeBold; color: #f5b23d; text-align: center;}
+	#txt_suc { width: 100%; max-width: 910px; margin: 0 auto; font-size: 20px; text-align: center;}
+	#txt_suc p {line-height: 30px;margin: 20px; font-size: 18px;}
+	#txt_suc p span {font-family: HurmeBold;}
+	#txt_suc p.menor {font-size:16px;}
+	#boxSocial {width: 100%; position: relative;margin: 0 auto; padding:0; text-align: center;}
+	#titSocial {width:40%; font-family: HurmeBold; text-align: center; margin: 10px auto 0;}
+	#boxSocial ul {width: 40%; min-width: 300px; font-size: 14px; position: relative; margin: 1% auto 1%; }
+	#boxSocial ul li {display: inline-block; width: 24%; position: relative; vertical-align: top;  }
+	#boxSocial ul li.mobile {display: none;}
+	#boxSocial ul li img {margin-bottom: 10px; margin: 0 auto;}
+	#boxSocial ul li img:hover {animation: swing 4s infinite alternate;}
+	#boxSocial p {font-size: 13px; padding: 0 3%; width: 80%; margin: 0 auto 3%}
+
+	ul#boxShare {width: 75%; margin:0 auto; padding:0; font-size: 16px; font-family: HurmeBold;}
+	ul#boxShare li  {width:49%; display: inline-block;}
+	ul#boxShare li ul li{width: 100%; min-width: 312px; margin-bottom: 10px;}
+	ul#boxShare li ul li input{ width: 272px; height: 43px; background: url("../imgs/thanks/bg_input_1.png") no-repeat center center; border: none; padding: 0 20px;}
+	ul#boxShare li ul li input.inp2{ background: url("../imgs/thanks/bg_input_2.png") no-repeat center center; }
+	ul#boxShare li ul li input.enviar {width: 134px; height: 23px; text-align: center; color: #000; border-radius: 4px; background: #f5b23d; text-transform: uppercase; font-size: 11px; font-family:HurmeBold; cursor: pointer; }
+
+
+#logos_rodape { width: 290px; height: 100px; background: url("../imgs/thanks/logos_rodape.png") no-repeat top center; margin: 1% auto; }
+	
+
+	/* ANIMACOES*/
+	.pulse1 { animation: fadeOut 2s infinite alternate;}
+	.pulse2 { animation: fadeOut 3s infinite alternate;}
+
+	@-webkit-keyframes tada2{
+    0%{
+	-webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+	}
+    50%{
+	-webkit-transform: scale3d(0.9, 0.9, 0.9);
+    transform: scale3d(0.9, 0.9, 0.9);
+	}
+    100%{
+	-webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+	}
+}
+ 
+@keyframes tada2{
+   0%{
+	-webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+	}
+    50%{
+	-webkit-transform: scale3d(0.95, 0.95, 0.95);
+    transform: scale3d(0.95, 0.95, 0.95);
+	}
+    100%{
+	-webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+	}
+}
+ 
+.tada2{
+    -webkit-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    -webkit-animation: tada2 0.2s ease-in-out forwards infinite;
+    animation: tada2 0.2s ease-in-out forwards infinite;
+}
+	
+
+@media screen and (max-width:999px) {
+		body {
+			overflow: auto;
+			background-size: cover;
+			background-attachment: fixed;
+			background-repeat: repeat;
+		}
+		#content {
+			height: 100%;
+			min-height: 100%;
+			margin-top: 10%;
+			top:0;
+			min-width: 320px;
+		}
+		#titSocial {width:80%; }
+	
+		#boxSocial ul li.mobile {display: inline-block;}
+	
+		#boxSocial {width: 80%; position: relative;margin: 0 auto; padding:0; text-align: center; }
+		#boxSocial ul {width: 90%; font-size: 14px; position: relative; margin: 0 auto; padding:0; }
+		#boxSocial ul li {display: inline-block;  width: 47%; position: relative; vertical-align: top;  margin-left:0; padding-bottom: 10px; margin-bottom: 10px; }
+		#boxSocial #raio_esq,
+		#boxSocial #raio_dir  {display: none;}
+		#logos_rodape {margin-bottom: 50px; }
+		
+		ul#boxShare {width: 100%; margin: 0 auto; padding: 0;}
+		ul#boxShare li  {width:100%; margin: 0 auto; }
+		ul#boxShare li ul li{width: 100%; min-width: 312px; margin:0 0 10px 0; padding: 0;}
+		ul#boxShare li ul li input{ width: 272px; height: 43px; background: url("../imgs/thanks/bg_input_1.png") no-repeat center center; border: none; padding: 0 20px;}
+		ul#boxShare li ul li input.inp2{ background: url("../imgs/thanks/bg_input_2.png") no-repeat center center; }
+		ul#boxShare li ul li input.enviar {width: 134px; height: 23px; text-align: center; color: #000; border-radius: 4px; background: #f5b23d; text-transform: uppercase; font-size: 11px; font-family:HurmeBold; cursor: pointer; }
+
+	}

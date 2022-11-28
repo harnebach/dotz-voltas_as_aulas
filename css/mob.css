@@ -1,0 +1,86 @@
+@charset "utf-8";
+/* CSS Document */
+
+@media screen and (min-width: 1000px) and (max-width: 1279px){
+	#section2 {height: 100%;}
+		
+		#section2 form#cadastro {width:45%; max-width: 449px; height: 475px; background: url("../imgs/sec2/bg_form.png") no-repeat top center; float: right;margin-top: 10%; margin-right: -2%; color:#022d52; text-align: left; padding-left: 0px; }
+		#section2 #header_txt {font-size: 20px; width: 100%; font-size:100%;}
+	#section2 #header_txt span {font-family: HurmeBold; font-size: 120%; color: #f2b125; vertical-align: top}
+	#section2 #header_txt span.gold {font-size: 60px; vertical-align: top;  line-height: 50px; }
+	#section2 #header_txt_2 {font-size: 100%; margin-top: 5px; margin-top: 20px;}
+}
+@media screen and (max-width:999px) {
+	body{
+		background:  #141d16 url("../imgs/bg.jpg") repeat top center; 
+		background-attachment: fixed;
+	}
+	
+	#section1,
+	#section2,
+	#section3 {
+		background: none;
+	}
+	
+	/* GLOBAL */
+	#section1 .container,
+	#section2 .container,
+	#section3 .container,
+	#section4 .container { width: 98%; max-width: 320px; min-width: 320px; height: auto; margin: 5% auto; padding-bottom:  5%; background: none; }
+	
+	/*
+
+	*/
+	
+	/* SECTION 1 */
+	#section1 {display: none;}
+	
+	/* SECTION 2 */
+	#section2 {width: 320px; height: 1500px; margin:0 auto;  }
+	#section2 .container {height: auto; min-height: 100%; }
+	#section2 #logo_int {width: 100%; max-width: 287px; position: relative;  transform:none; top:0; margin: 0 auto;}
+	#section2 #percentual {width:98%; max-width: 450px; height: 800px; max-height: 400px; display: block; left:0; position: relative; transform: none; margin-left:1%; top:0; }
+	#section2 #percentual #selo {margin-top: 10%;}
+	#section2 #percentual #bloco_percentual {width: 100%; max-width: 423px; height: 100%; max-height: 180px;  margin: 0 auto; position: relative; }
+	#section2 #percentual #bloco_percentual img {width: 100%; position: absolute; top:0; left:0;}
+	#section2 #bloco_bonus {position: relative; bottom: 0; width: 100%; height: 72px;  }
+	#section2 #bloco_bonus  img {width: 100%;}
+	
+	#section2 form#cadastro {width:100%; max-width: 449px; height: 475px; background: url("../imgs/sec2/bg_form.png") no-repeat top center; margin-top: 350px; color:#022d52; text-align: left; padding-left: 0px; display: block; }
+	#section2 form#cadastro fieldset {margin-top: 20px;}
+	
+	/* SECTION 3 */
+	#section3 {height: 900px;}
+	#section3 .container {height: auto; min-height: 100%; }
+	#section3 h1 {font-size: 20px; margin: 0 auto; }
+	#section3 ul {width: 100%; margin: 0 auto; font-size: 14px; margin-bottom: 20px; }
+	#section3 ul li {display: inline-block; width: 47%; position: relative; vertical-align: top;}
+	#section3 ul li h3 {font-family: HurmeBold; font-size: 15px; margin-bottom: 10px; }
+	#section3 .aviso { width: 100%; max-width: 738px; height: 50px;  margin: 0 auto; position: relative;}
+	#section3 p {  margin: 0 auto 3%; width: 90%; }
+	#section3 .cartao_desk {display: none; visibility: hidden;}
+	#section3 .cartao_mob {display: block; visibility: visible;}
+	
+	/* Section 4
+ * --------------------------------------- */
+	#section4 {height: 800px;}
+	#section4 .container {height: auto; min-height: 100%; }
+	#section4 h1 {font-size: 20px; }
+	#section4 h1 span {font-family: HurmeBold; color: #f5b23d;}
+	#section4 #cartoes{ width: 98%; height: 200px; position: relative; }
+	#section4 #txt_sec4 { width: 100%; max-width: 910px; margin: 0 auto; font-size: 20px; }
+	#section4 #txt_sec4 p {line-height: 40px;margin: 10px;}
+	#section4 #boxLista {width: 80%; position: relative;margin: 0 auto; }
+	#section4 #boxLista ul {width: 100%; font-size: 15px; position: relative; margin: 1% auto 1%; }
+	#section4 #boxLista ul li {display: inline-block; width: 48%; position: relative; vertical-align: top;}
+	#section4 #boxLista ul li img {margin-bottom: 10px;}
+	#section4 #boxLista ul li img:hover {animation: shake 10s 3 alternate;}
+	#section4 #boxLista ul li h3 {font-family: HurmeBold; font-size: 18px; margin-bottom: 10px; }
+	#section4 #boxLista #raio_esq {display: none; }
+	#section4 #boxLista #raio_dir {display: none; }
+	#section4 #boxLista #raio_esq img,
+	#section4 #boxLista #raio_dir img  {width: 100%; max-width: 100px; animation: pulse 10s infinite alternate; }
+	#section4 #logos_rodape_sec4 { width: 290px; height: 100px; background: url("../imgs/sec4/logos_rodape.png") no-repeat top center; margin: 10% auto; }
+
+	
+}

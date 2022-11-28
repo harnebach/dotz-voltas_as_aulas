@@ -1,0 +1,50 @@
+/* convertido no https://onlinefontconverter.com/ */
+
+@font-face {
+  font-family: 'HurmeRegular_IE';
+  src: url('font/HurmeGeometricSans4-Regular.eot'),
+    url('font/HurmeGeometricSans4-Regular.svg#Locaweb-Icons') format('svg'),
+    url('font/HurmeGeometricSans4-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HurmeRegular';
+  src: url('font/HurmeGeometricSans4-Regular.eot');
+  src: url('font/HurmeGeometricSans4-Regular?#iefix') format('embedded-opentype'),
+    url('font/HurmeGeometricSans4-Regular.svg#Locaweb-Icons') format('svg'),
+    url('font/HurmeGeometricSans4-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HurmeLight';
+  src: url('font/HurmeGeometricSans4-Light.eot');
+  src: url('font/HurmeGeometricSans4-Light?#iefix') format('embedded-opentype'),
+    url('font/HurmeGeometricSans4-Light.svg#Locaweb-Icons') format('svg'),
+    url('font/HurmeGeometricSans4-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HurmeBold';
+  src: url('font/HurmeGeometricSans4-Bold.eot');
+  src: url('font/HurmeGeometricSans4-Bold?#iefix') format('embedded-opentype'),
+    url('font/HurmeGeometricSans4-Bold.svg#Locaweb-Icons') format('svg'),
+    url('font/HurmeGeometricSans4-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HurmeBlack';
+  src: url('font/HurmeGeometricSans4-Black.eot');
+  src: url('font/HurmeGeometricSans4-Black?#iefix') format('embedded-opentype'),
+    url('font/HurmeGeometricSans4-Black.svg#Locaweb-Icons') format('svg'),
+    url('font/HurmeGeometricSans4-Black.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

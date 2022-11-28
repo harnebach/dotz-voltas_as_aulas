@@ -1,0 +1,152 @@
+@charset "utf-8";
+/* CSS Document */
+
+	body, html {margin: 0; padding: 0; width: 100%; height: 100%; font-family: HurmeRegular; color: #fff;}	
+	body { background: #121b14 url("../imgs/bg.jpg") no-repeat top center; background-size: cover; vertical-align: middle; }
+	a, img {text-decoration: none; outline: none;}
+	a {	color: #f1b023;	text-decoration: underline;}
+
+	#mob {display: none;}	
+
+	#content {width: 100%; max-width: 1280px; min-width: 320px; margin: 0 auto; height: 650px; margin-top:-300px; top:40%; position: relative; }
+	#ampulheta { width: 100%; max-width: 407px; height: 100%; max-height: 481px; position: relative; float: left; margin-left: 10%; top:50%; transform: translateY(-50%);  display: block;}
+	#ampulheta img {position: absolute; top:0; left:0; width: 100%; }
+	#txt_aviso { width: 100%; max-width: 483px; min-width: 320px; height: 100%; max-height: 302px; position: relative; float: right; top: 50%; right: 10%; transform: translateY(-50%); background: url("../imgs/enc/bg_txt.png") no-repeat top center; background-size: contain;}
+	#txt_aviso p { font-size: 26px; text-align: left; position: absolute; bottom: -15px; padding-left:30px; border-left: 1px solid #fff;}
+	#logo { width: 179px; height: 91px; background: url("../imgs/logo_volta_as_aulas_int.png") no-repeat top center; position: absolute; bottom: 2%; left:50%; margin-left: -89.5px}
+	
+
+	/* ANIMACOES*/
+	@-webkit-keyframes tada2{
+		0%{
+		-webkit-transform: scale3d(1, 1, 1);
+		transform: scale3d(1, 1, 1);
+		}
+		50%{
+		-webkit-transform: scale3d(0.9, 0.9, 0.9);
+		transform: scale3d(0.9, 0.9, 0.9);
+		}
+		100%{
+		-webkit-transform: scale3d(1, 1, 1);
+		transform: scale3d(1, 1, 1);
+		}
+	}
+
+	@keyframes tada2{
+	   0%{
+		-webkit-transform: scale3d(1, 1, 1);
+		transform: scale3d(1, 1, 1);
+		}
+		50%{
+		-webkit-transform: scale3d(0.95, 0.95, 0.95);
+		transform: scale3d(0.95, 0.95, 0.95);
+		}
+		100%{
+		-webkit-transform: scale3d(1, 1, 1);
+		transform: scale3d(1, 1, 1);
+		}
+	}
+
+	.tada2{
+		-webkit-transform-origin: 50% 0;
+		transform-origin: 50% 0;
+		-webkit-animation: tada2 0.2s ease-in-out forwards infinite;
+		animation: tada2 0.2s ease-in-out forwards infinite;
+	}
+
+@keyframes aparecer {
+  0%   { opacity:1; }
+  25%  { opacity:0; }
+  50%  { opacity:0; }
+  75%  { opacity:0;}
+  100% { opacity:1; }
+}
+@-o-keyframes aparecer{
+  0%   { opacity:1; }
+  25%  { opacity:0; }
+  50%  { opacity:0; }
+  75%  { opacity:0;}
+  100% { opacity:1; }
+}
+@-moz-keyframes aparecer{
+  0%   { opacity:1; }
+  25%  { opacity:0; }
+  50%  { opacity:0; }
+  75%  { opacity:0;}
+  100% { opacity:1; }
+}
+@-webkit-keyframes aparecer{
+  0%   { opacity:1; }
+  25%  { opacity:0; }
+  50%  { opacity:0; }
+  75%  { opacity:0;}
+  100% { opacity:1; }
+}
+
+.aparecer {
+   -webkit-animation: aparecer 1s infinite;
+   -moz-animation: aparecer 1s infinite;
+   -o-animation: aparecer 1s infinite;
+    animation: aparecer 1s infinite;
+}
+
+@keyframes aparecer1 {
+  0%   { opacity:0; }
+  25%  { opacity:0;}
+  50%  { opacity:1;}
+  75%  { opacity:0;}
+  100% { opacity:0; }
+}
+@-o-keyframes aparecer1{
+  0%   { opacity:0; }
+  25%  { opacity:0;}
+  50%  { opacity:1;}
+  75%  { opacity:0;}
+  100% { opacity:0; }
+}
+@-moz-keyframes aparecer1{
+  0%   { opacity:0; }
+  25%  { opacity:0;}
+  50%  { opacity:1;}
+  75%  { opacity:0;}
+  100% { opacity:0; }
+}
+@-webkit-keyframes aparecer1{
+  0%   { opacity:0; }
+  25%  { opacity:0;}
+  50%  { opacity:1;}
+  75%  { opacity:0;}
+  100% { opacity:0; }
+}
+
+.aparecer1 {
+   -webkit-animation: aparecer1 1s infinite;
+   -moz-animation: aparecer1 1s infinite;
+   -o-animation: aparecer1 1s infinite;
+    animation: aparecer1 1s infinite;
+}
+
+@media screen and (max-width:999px) {
+		body {
+			overflow: auto;
+			background-size: cover;
+			background-attachment: fixed;
+			background-repeat: repeat;
+		}
+		.mobile {display: block;}
+		#content {
+			height: 100%;
+			min-height: 100%;
+			margin-top: 0;
+			top:0;
+		}
+		
+		.mob {display: block;}
+	
+	#ampulheta {margin-left:0; left:50%; transform: translateX(-50%); min-height: 315px; top:0; }
+	#txt_aviso {max-width: 94%; height: auto; transform: none; float: left; left: 2%; margin-bottom: 10%; }
+	#txt_aviso p { max-width: 483px; font-size: 140%; position: relative; padding-left: 3%; margin: 120px auto 0 auto; border-left:1px solid white;  }
+	#logo {position: relative; margin-bottom: 50px; }
+
+		
+	}
